@@ -1,0 +1,53 @@
+(*
+ * Copyright 2023, Proofcraft Pty Ltd
+ *
+ * SPDX-License-Identifier: BSD-2-Clause
+ *)
+
+chapter Lib
+
+session Monads (lib) = HOL +
+
+  sessions
+    "HOL-Library"
+    "HOL-Eisbach"
+    Eisbach_Tools
+    ML_Utils
+
+  directories
+    wp
+    nondet
+    reader_option
+    trace
+
+  theories
+    WPBang
+    WPFix
+    Eisbach_WP
+    WPI
+    WPC
+    WP_Pre
+    WP
+    Datatype_Schematic
+    Nondet_Monad
+    Nondet_Lemmas
+    Nondet_VCG
+    Nondet_More_VCG
+    Nondet_In_Monad
+    Nondet_Sat
+    Nondet_Det
+    Nondet_No_Fail
+    Nondet_No_Throw
+    Nondet_Empty_Fail
+    Nondet_Monad_Equations
+    Nondet_While_Loop_Rules
+    Nondet_While_Loop_Rules_Completeness
+    Reader_Option_Monad
+    Reader_Option_ND
+    Reader_Option_VCG
+    Trace_Monad
+    Trace_Lemmas
+    Trace_VCG
+    Strengthen
+    Nondet_Strengthen_Setup
+    Strengthen_Demo
